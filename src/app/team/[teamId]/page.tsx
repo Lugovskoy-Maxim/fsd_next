@@ -1,3 +1,4 @@
+import TeamIdPage from "@/pages/team/[teamId]/page";
 
 export default function Index({
   params,
@@ -5,8 +6,6 @@ export default function Index({
   params: { teamId: string};
 }) {
   return (
-    <div>
-      <h1>Страница команды {params.teamId}</h1>
-    </div>
+    <TeamIdPage teamId={params.teamId} />
   );
 }
